@@ -115,16 +115,43 @@
       50%{border-right: 1px solid #000} 
       100%{border-right: 1px solid #fff} 
     }
+    .loader {
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    z-index: 1;
+	    width: 150px;
+	    height: 150px;
+	    margin: -75px 0 0 -75px;
+	    border: 16px solid #f3f3f3;
+	    border-radius: 50%;
+	    border-top: 16px solid #3498db;
+	    width: 120px;
+	    height: 120px;
+	    -webkit-animation: spin 2s linear infinite;
+	    animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
   </style>
   
 </head>
 
 <body id="page-top">
-
+<div class="loader" style="display:block;"> </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container" style="display:none;">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">portfolio</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -573,9 +600,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+     	  </div>
+      	</div>
+  	  </div>
+  	</div>
   </div>
   </div> 
 <!-- 4444444444444444444 -->
@@ -595,6 +623,16 @@
   <script src="resources/js/freelancer.min.js"></script>
 
 <script>
+window.onload =function(){
+	var loader = $(".loader");
+	var container = $(".container");
+	loader.css("display","none");
+	container.css("display","block");	
+}
+</script>
+
+<script>
+
 var typingBool = false; 
 var typingIdx=0; 
 var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트를 가져온다 
@@ -616,7 +654,9 @@ if(typingBool==false){ // 타이핑이 진행되지 않았다면
      typingTxt = $(".typing-txt").eq(typingIdx).text(); 
      $(".typing").html("")
    } 
- }  
+ }
+ 
+ 
 
 
 </script>
