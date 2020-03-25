@@ -99,9 +99,23 @@
 	.effect5:hover figcaption {
 		opacity:1;
 		transition-delay: 0.1s;
-	}
-  </style>
+	}	
+	
+	h1.typing-txt{display: none;}
 
+	.typing {  
+/*    position: absolute;*/ 
+      display: inline-block; 
+      animation-name: cursor; 
+      animation-duration: 0.3s; 
+      animation-iteration-count: infinite; 
+    } 
+    @keyframes cursor{ 
+      0%{border-right: 1px solid #fff} 
+      50%{border-right: 1px solid #000} 
+      100%{border-right: 1px solid #fff} 
+    }
+  </style>
   
 </head>
 
@@ -140,7 +154,8 @@
       <img class="masthead-avatar mb-5" src="resources/img/yejin.jpeg" alt="">
 
       <!-- Masthead Heading -->	
-      <h1 class="masthead-heading text-uppercase mb-0"> 예진's Portfolio</h1>
+      <h1 class="typing-txt masthead-heading text-uppercase mb-0" >예진's Portfolio</h1>
+      <h1 class="typing masthead-heading text-uppercase mb-0"></h1> 
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -202,6 +217,7 @@
         </div>
 
         <!-- Portfolio Item 3 -->
+        
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -280,7 +296,7 @@
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
-             <p style ="font-family: 'Do Hyeon', sans-serif;color :#2c3e50!important">개발 가능 언어</p>
+             <!-- <p style ="font-family: 'Do Hyeon', sans-serif;color :#2c3e50!important">개발 가능 언어</p> -->
               	<div class ="skills">
 	              		<div class="effect-wrap">
 							<figure class="effect5">
@@ -339,7 +355,7 @@
             
             <div class="control-group">
               <div class="form-group">
-                <p style ="font-family: 'Do Hyeon', sans-serif;color :#2c3e50!important">개발 가능 환경 </p>
+               <!--  <p style ="font-family: 'Do Hyeon', sans-serif;color :#2c3e50!important">개발 가능 환경 </p> -->
                 <div class="effect-wrap">
 					<figure class="effect5">
 						<img src="resources/img/eclipse.png" alt="">
@@ -450,9 +466,12 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QTKgiMeoelI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div style="position: relative; max-width: 100%; padding-bottom: 56.25%; height: 0;">
+                <iframe width="560" height="320" src="https://www.youtube.com/embed/QTKgiMeoelI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position: absolute; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+               </div>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5"> <a href="https://github.com/yaejin9503/bankpro/tree/master/1_test">해당 프로젝트에 대한 깃허브 주소입니다.</a><br> 이 프로젝트는 은행 페이지 프로젝트로 입금 출금 계좌이체 보유계좌현황보기 이용자 게시판 사용등이 가능한 프로젝트 입니다. 스프링 프레임 워크를 사용하여 작업하였고 사용언어는 java, javascript, css, html, ajax 등을 사용하였고, DB로는 오라클의 DB를 사용했습니다. <br> 개발기간은 일주일 정도 이고 개발인원은 1명입니다. </p>
+                <p class="mb-5"> <a href="https://github.com/yaejin9503/bankpro/tree/master/1_test">해당 프로젝트에 대한 깃허브 주소입니다.</a><br> 이 프로젝트는 은행 페이지 프로젝트로 입금 출금 계좌이체 보유계좌현황보기 이용자 게시판 사용등이 가능한 프로젝트 입니다. 개발 환경은 spring framework로 버전은 3.6.1를 사용하였습니다. 사용자의 데이터를 저장하기 위해서 Oracle DB를 사용하였고 
+                언어로는 java와 javascript, jquery, html, css등을 사용하여 개발하였습니다. <br> 개발기간은 일주일 정도 이고 개발인원은 1명입니다. </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -479,7 +498,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DietGame</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -489,9 +508,21 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="resources/img/portfolio/cake.png" alt="">
+                 <div style="position: relative; max-width: 100%; padding-bottom: 56.25%; height: 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qEgeXwVKDNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position: absolute; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                </div>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5"><a href="https://github.com/yaejin9503/dietgame">해당 프로젝트 깃허브 주소입니다.</a><br> 
+                <font color ="grey"> *해당 프로젝트 일본취업을 준비했을 때 한 프로젝트로 언어가 일본어 인점 양해 부탁드립니다.</font><br>
+                이 프로젝트는 다이어트를 주제로 한 웹 게임입니다. 사용자별로 먹었던 음식이나 했던 운동들을 기록하여 칼로리 소모를 간단하게 볼 수 있습니다. 
+                다이어트 게임인 만큼 미니게임 또한 즐길 수 있게 만들어 사용자들의 흥미를 유도하였습니다.
+                전체적인 css, html문서들은 직접 만들었습니다. <br>
+                개발 환경은 spring framework로 버전은 3.6.1를 사용하였습니다. 사용자의 데이터를 저장하기 위해서 Oracle DB를 사용하였고 
+                언어로는 java와 javascript, jquery, html, css등을 사용하여 개발하였습니다.
+                개발인원은 3명으로, 제 역할은 팀장으로 전체적인 백엔드 코드 작성, 프론트엔드에 해당하는 홈화면 구성, html의 canvas 태그를 사용하여 
+                미니게임을 개발하였습니다. 
+                개발기간은 1달 정도입니다.
+                </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -505,6 +536,7 @@
   </div>
 
   <!-- Portfolio Modal 3 -->
+   
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
@@ -517,9 +549,9 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                <!-- Icon Divider -->
+                
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Board</h2>
+                
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
@@ -527,10 +559,13 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="resources/img/portfolio/circus.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                
+                <img class="img-fluid rounded mb-5" src="resources/img/portfolio/board.png" alt="">
+               
+                <p class="mb-5">간단한 게시판으로, 회원가입, 로그인, 게시판 게시물 작성등이 가능한 웹페이지 입니다. 
+                개발 환경은 spring framework로 버전은 3.6.1를 사용하였습니다. 사용자의 데이터를 저장하기 위해서 Oracle DB를 사용하였고 
+                언어로는 java와 javascript, jquery, html, css등을 사용하여 개발하였습니다.전체적인 css는 부트스트랩을 적용하여 개발한 프로젝트 입니다. 
+                개발 인원으로는 1명으로 부가적인 기능을 개발하기 위해 개발 중에 있습니다.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -542,7 +577,7 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> 
 <!-- 4444444444444444444 -->
 
   <!-- Bootstrap core JavaScript -->
@@ -559,6 +594,32 @@
   <!-- Custom scripts for this template -->
   <script src="resources/js/freelancer.min.js"></script>
 
+<script>
+var typingBool = false; 
+var typingIdx=0; 
+var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트를 가져온다 
+typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
+if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+   typingBool=true; 
+   
+   var tyInt = setInterval(typing,200); // 반복동작 
+ } 
+ 
+ function typing(){ 
+   if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+     $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+     typingIdx++; 
+   } else{ 
+     //clearInterval(tyInt); //끝나면 반복종료 
+     typingBool=false;
+     typingIdx=0;
+     typingTxt = $(".typing-txt").eq(typingIdx).text(); 
+     $(".typing").html("")
+   } 
+ }  
+
+
+</script>
 </body>
 
 </html>
