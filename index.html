@@ -159,7 +159,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">project</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Work & project</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">who am i</a>
@@ -180,9 +180,11 @@
       <img class="masthead-avatar mb-5" src="resources/img/yejin.jpeg" alt="">
 
       <!-- Masthead Heading -->	
-      <h1 class="typing-txt masthead-heading text-uppercase mb-0" >예진's Portfolio</h1>
-      <h1 class="typing masthead-heading text-uppercase mb-0"></h1> 
-
+      <div width="style=width: 150px;">
+        <h1 class="masthead-heading text-uppercase mb-0" >예진's Portfolio</h1>
+        <h1 class="masthead-heading text-uppercase mb-0"></h1> 
+      </div>
+      
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
@@ -203,7 +205,7 @@
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">project</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Work & project</h2>
       <br><h5  class="text-center text-secondary mb-0">자세한 건 클릭해주세요!</h5>
 
       <!-- Icon Divider -->
@@ -269,7 +271,7 @@
     <div class="container">
 
       <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">who am i</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white " style ="font-family: 'Do Hyeon', sans-serif;">코드로 말하는 개발자</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -281,12 +283,12 @@
       </div>
 
       <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead" style ="font-family: 'Do Hyeon', sans-serif;">안녕하세요! 주니어 개발자 김예진이라고 합니다.한신대학교 컴퓨터 공학부를 전공하였으며, 2019년에 웹 개발자 양성과정을 수료하였습니다. 아직 부족한 점도 많지만 점차 더욱 더 공부하여 성장하는 개발자가 되고 싶습니다! </p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead" style ="font-family: 'Do Hyeon', sans-serif;">아직 많이 부족한 포트폴리오 지만 개발 경험과 실력이 쌓이다 보면 어느새 좋은 포트 폴리오가 되어있으리라 믿으며 만들어 보았습니다. 아래에는 깃허브 주소입니다 혹시 제가 궁금해지셨다면 방문해주세요!:)</p>
+      <div class="row" >
+        <div style="text-align: center; width:100%">
+          <p class="lead" style ="font-family: 'Do Hyeon', sans-serif;">
+            안녕하세요! 주니어 개발자 김예진이라고 합니다. <br/>
+            한신대학교 컴퓨터 공학부를 전공하였으며, 2019년에 웹 개발자 양성과정을 수료하였습니다. <br/>
+            아직 부족한 점도 많지만 점차 더욱 더 공부하여 성장하는 개발자가 되고 싶습니다! </p>
         </div>
       </div>
 
@@ -531,21 +533,37 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                 <div style="position: relative; max-width: 100%; padding-bottom: 56.25%; height: 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qEgeXwVKDNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position: absolute; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                 <div style="position: relative; max-width: 100%; padding-bottom: 320px; height: 0;">
+                  <img class="img-fluid" src="resources/img/portfolio/dietgame.png" alt="">
                 </div>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5"><a href="https://github.com/yaejin9503/dietgame">해당 프로젝트 깃허브 주소입니다.</a><br> 
-                <font color ="grey"> *해당 프로젝트 일본취업을 준비했을 때 한 프로젝트로 언어가 일본어 인점 양해 부탁드립니다.</font><br>
-                이 프로젝트는 다이어트를 주제로 한 웹 게임입니다. 사용자별로 먹었던 음식이나 했던 운동들을 기록하여 칼로리 소모를 간단하게 볼 수 있습니다. 
-                다이어트 게임인 만큼 미니게임 또한 즐길 수 있게 만들어 사용자들의 흥미를 유도하였습니다.
-                전체적인 css, html문서들은 직접 만들었습니다. <br>
-                개발 환경은 spring framework로 버전은 3.6.1를 사용하였습니다. 사용자의 데이터를 저장하기 위해서 Oracle DB를 사용하였고 
-                언어로는 java와 javascript, jquery, html, css등을 사용하여 개발하였습니다.
-                개발인원은 3명으로, 제 역할은 팀장으로 전체적인 백엔드 코드 작성, 프론트엔드에 해당하는 홈화면 구성, html의 canvas 태그를 사용하여 
-                미니게임을 개발하였습니다. 
-                개발기간은 1달 정도입니다.
-                </p>
+                <div class="mb-5"><a href="https://github.com/yaejin9503/dietgame">해당 프로젝트 깃허브 주소입니다.</a><br> 
+                <!-- <font color ="grey"> *해당 프로젝트 일본취업을 준비했을 때 한 프로젝트로 언어가 일본어 인점 양해 부탁드립니다.</font><br> -->
+                
+                  <p> <b>프로젝트 명 :</b> Diet Game</p> 
+                  <p> <b>참여 인원 :</b> 3명 </p> 
+                  <p> <b>개발 기간 :</b> 2019.09.03 ~ 2019.10.03 </p>
+                  <p> <b>개발 내용:</b> Js기반의 웹게임과 CRUD </p>
+                  <p>
+                    <div><b>개발 환경</b></div>
+                      <div style="display: flex;"> 
+                        <div style="width: 50%; justify-content: flex-end; text-align: right; margin-right: 30px;">
+                          <div>WAS</div>
+                          <div>DB</div>
+                          <div>Language</div>
+                          <div>Model</div>
+                          <div>Web</div>
+                        </div>
+                        <div style="width: 50%; margin-left: 10px; text-align: left" >
+                          <div>Apache Tomcat 8.5</div>
+                          <div>Oracle DB</div>
+                          <div>JAVA</div>
+                          <div>MVC model</div>
+                          <div>JavaScript, Ajax, Jquery</div>
+                        </div>
+                      </div>
+                  </p>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
